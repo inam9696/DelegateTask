@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Task_3_Delegates.props" />
+</Project>

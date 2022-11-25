@@ -1,0 +1,33 @@
+﻿@model IList<String>
+
+@{
+    ViewData["Title"] = "NameLahore";
+}
+
+<h1>NameLahore</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Names:
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item)
+            </td>
+            
+           
+        </tr>
+}
+    </tbody>
+</table>
